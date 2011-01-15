@@ -1,0 +1,1 @@
+no_console_suspend=1 msmsdcc_sdioirq=1 wire.search_count=5 init=/sbin/init rootwait root=/dev/mmcblk0p2 rootfstype=ext3 rw noinitrd
