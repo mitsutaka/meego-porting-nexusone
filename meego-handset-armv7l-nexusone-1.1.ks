@@ -194,7 +194,7 @@ if [ -n "$IMG_NAME" ]; then
 fi
 
 # Creating rootfs tar ball.
-for dir in `mount | grep $INSTALL_ROOT\/ | awk '{ print $3 }' | sort -r`; do
+for dir in `mount | grep $INSTALL_ROOT\/ | cut -d' ' -f3 | sort -r`; do
     umount $dir
 done
 outdir=`pwd`
